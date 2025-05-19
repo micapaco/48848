@@ -1,0 +1,16 @@
+Gramática asignada
+
+Se proporciona una gramática en notación EBNF que describe un lenguaje específico. Utilizando ANTLR4 con JavaScript, implemente un analizador que procese un archivo de entrada
+(input.txt) con código fuente escrito en dicho lenguaje.
+<programa> ::= { <usuario> } ;
+<usuario> ::= "usuario" <identificador> "{" { <atributo> } "}" ;
+<atributo> ::= <identificador> "=" <valor> ":" :
+<valor> ::= <numero> | <cadena> | <booleano> ;
+<número> ::= <dígito> { <dígito>} ;
+<cadena> ::= "" { <carácter> } "" ;
+<booleano> ::= "verdadero" | "falso" ;
+<identificador> ::= <letra> { <letra> | <digito>};
+<carácter> ::= <letra> | <digito> | " " | <simbolo> ;
+<letra> ::= "a" | "b" | ... | ''z'' | "A" | "B" | ... | "Z" ;
+<digito> ::= "0""1"1"2""3"1"4""5""6"1"7"|"8"|"9";
+<símbolo> ::= "." 1 "," | "!" | "?" | ":" |";"|"'";

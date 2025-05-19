@@ -1,0 +1,7 @@
+input 1(incorrecto)
+
+usuario Usuario1 {
+  nombre  "Laura Ramos";
+  edad = veinte;
+  activo = falso;
+}
